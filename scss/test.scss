@@ -1,4 +1,61 @@
-h1{
-    // color:red;
-    color: blue;
+html,
+body,
+.content{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
+
+.content{
+    height: 3000px; //to see parallax effect
+}
+
+.navbar-collapse {
+    padding-left: 65%;
+}
+
+.jumbotron {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: block;
+    margin: {
+        top:20px;
+        bottom: 0;
+    }
+}
+
+.accordion {
+
+    button {
+        color: black; 
+    }
+
+    .btn.btn-link{
+        &::after {
+          content: "-";
+          font-weight: bolder;
+          position: absolute;
+          right: 34px;
+          top: 15px;
+          font-size: 30px;
+      
+        }
+      }
+
+      .btn.btn-link.collapsed{
+          &::after{
+            content: "+";
+            font-weight: bolder;
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            font-size: 30px;
+          }
+        
+        }
+}
+
+
